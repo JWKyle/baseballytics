@@ -1,0 +1,2 @@
+class Batterstatcast < ApplicationRecord
+end
