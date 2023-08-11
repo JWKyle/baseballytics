@@ -1,0 +1,40 @@
+<h1>Batter Stats list</h1>
+<table>
+  <thead>
+    <tr>
+      <th>Last Name</th>
+      <th>First Name</th>
+      <th>Plate Appearances</th>
+      <th>Ball In Play</th>
+      <th>BA</th>
+      <th>Est BA</th>
+      <th>BA Diff</th>
+      <th>SLG</th>
+      <th>Est SLG</th>
+      <th>SLG Diff</th>
+      <th>wOBA</th>
+      <th>Est wOBA</th>
+      <th>wOBA Diff</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @batstats.each do |batter| %>
+      <tr>
+        <td><%= batter.last_name %></td>
+        <td><%= batter.first_name %></td>
+        <td><%= batter.pa %></td>
+        <td><%= batter.bip %></td>
+        <td><%= number_with_precision(batter.ba, precision: 3) %></td>
+        <td><%= batter.est_ba %></td>
+        <td><%= number_with_precision(batter.est_ba_minus_ba_diff, precision: 3) %></td>
+        <td><%= batter.slg %></td>
+        <td><%= batter.est_slg %></td>
+        <td><%= batter.est_slg_minus_slg_diff %></td>
+        <td><%= batter.woba %></td>
+        <td><%= batter.est_woba %></td>
+        <td><%= batter.est_woba_minus_woba_diff %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
