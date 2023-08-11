@@ -11,7 +11,7 @@ class CreateBatterstatcasts < ActiveRecord::Migration[7.0]
       t.decimal :xwoba
       t.decimal :xobp
       t.decimal :xiso
-      t.decimal :exit_velocit_avg
+      t.decimal :exit_velocity_avg
       t.decimal :launch_angle_avg
       t.decimal :barrel_batted_rate
 

@@ -1,7 +1,7 @@
 require 'csv'
 
 CSV.foreach(Rails.root.join('db', 'batterstatcast.csv'), headers: true) do |row|
-    Batterstatcastdata.create!(
+    Batterstatcast.create!(
         last_name: row['last_name'],
         first_name: row['first_name'],
         player_id: row['player_id'],

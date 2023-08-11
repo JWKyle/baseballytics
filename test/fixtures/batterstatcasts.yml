@@ -11,7 +11,7 @@ one:
   xwoba: 9.99
   xobp: 9.99
   xiso: 9.99
-  exit_velocit_avg: 9.99
+  exit_velocity_avg: 9.99
   launch_angle_avg: 9.99
   barrel_batted_rate: 9.99
 
@@ -26,6 +26,6 @@ two:
   xwoba: 9.99
   xobp: 9.99
   xiso: 9.99
-  exit_velocit_avg: 9.99
+  exit_velocity_avg: 9.99
   launch_angle_avg: 9.99
   barrel_batted_rate: 9.99

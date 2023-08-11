@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_08_11_164002) do
+ActiveRecord::Schema[7.0].define(version: 2023_08_11_165155) do
   create_table "batstats", force: :cascade do |t|
     t.string "last_name"
     t.string "first_name"
@@ -42,7 +42,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_08_11_164002) do
     t.decimal "xwoba"
     t.decimal "xobp"
     t.decimal "xiso"
-    t.decimal "exit_velocit_avg"
+    t.decimal "exit_velocity_avg"
     t.decimal "launch_angle_avg"
     t.decimal "barrel_batted_rate"
     t.datetime "created_at", null: false
