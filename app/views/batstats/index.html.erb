@@ -18,15 +18,15 @@
     </tr>
   </thead>
   <tbody>
-    <% @batterstats.each do |batter| %>
+    <% @batstats.each do |batter| %>
       <tr>
-        <td><%= batter.first_name %></td>
         <td><%= batter.last_name %></td>
+        <td><%= batter.first_name %></td>
         <td><%= batter.pa %></td>
         <td><%= batter.bip %></td>
-        <td><%= batter.ba %></td>
+        <td><%= number_with_precision(batter.ba, precision: 3) %></td>
         <td><%= batter.est_ba %></td>
-        <td><%= batter.est_ba_minus_ba_diff %></td>
+        <td><%= number_with_precision(batter.est_ba_minus_ba_diff, precision: 3) %></td>
         <td><%= batter.slg %></td>
         <td><%= batter.est_slg %></td>
         <td><%= batter.est_slg_minus_slg_diff %></td>
