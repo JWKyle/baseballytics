@@ -1,2 +1,42 @@
 <h1>Batterstatcasts#index</h1>
-<p>Find me in app/views/batterstatcasts/index.html.erb</p>
+<h1>Batter Stats list</h1>
+<table>
+  <thead>
+    <tr>
+      <th>Last Name</th>
+      <th>First Name</th>
+      <th>Player ID</th>
+      <th>Year</th>
+      <th>XBA</th>
+      <th>xslg</th>
+      <th>wOBA</th>
+      <th>xwoba</th>
+      <th>xobp</th>
+      <th>xiso</th>
+      <th>exit_velocity_avg</th>
+      <th>launch_angle_avg</th>
+      <th>barrel_batted_rate</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @batterstatcasts.each do |batter| %>
+      <tr>
+        <td><%= batter.last_name %></td>
+        <td><%= batter.first_name %></td>
+        <td><%= batter.player_id %></td>
+        <td><%= batter.year %></td>
+        <td><%= batter.xba %></td>
+        <td><%= batter.xslg %></td>
+        <td><%= batter.woba %></td>
+        <td><%= batter.xwoba %></td>
+        <td><%= batter.xobp %></td>
+        <td><%= batter.xiso %></td>
+        <td><%= batter.exit_velocity_avg %></td>
+        <td><%= batter.launch_angle_avg %></td>
+        <td><%= batter.barrel_batted_rate %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+
