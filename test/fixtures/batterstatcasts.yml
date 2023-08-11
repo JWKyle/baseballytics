@@ -1,0 +1,31 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  last_name: MyString
+  first_name: MyString
+  player_id: 1
+  year: 1
+  xba: 9.99
+  xslg: 9.99
+  woba: 9.99
+  xwoba: 9.99
+  xobp: 9.99
+  xiso: 9.99
+  exit_velocity_avg: 9.99
+  launch_angle_avg: 9.99
+  barrel_batted_rate: 9.99
+
+two:
+  last_name: MyString
+  first_name: MyString
+  player_id: 1
+  year: 1
+  xba: 9.99
+  xslg: 9.99
+  woba: 9.99
+  xwoba: 9.99
+  xobp: 9.99
+  xiso: 9.99
+  exit_velocity_avg: 9.99
+  launch_angle_avg: 9.99
+  barrel_batted_rate: 9.99
